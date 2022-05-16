@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta:__legacy"
+
+[tool.mypy]
+strict = true
+plugins = ["mypy_django_plugin.main"]
+
+[[tool.mypy.overrides]]
+module = "polls.migrations.*"
+ignore_errors = true
+
+[tool.django-stubs]
+django_settings_module = "mysite.settings"
+
+[tool.pylint.MASTER]
+load-plugins = ["pylint_django"]

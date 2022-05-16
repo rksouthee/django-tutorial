@@ -1,0 +1,8 @@
+django
+black
+mypy
+pylint
+pylint-django
+django-stubs
+django-stubs-ext
+coverage

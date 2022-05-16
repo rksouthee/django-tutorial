@@ -1,0 +1,8 @@
+{
+	"*":
+	{
+		"console": "python manage.py shell",
+		"make": "mypy",
+		"start": "python manage.py runserver"
+	}
+}
